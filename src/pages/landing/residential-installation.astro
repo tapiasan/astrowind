@@ -1,28 +1,28 @@
 ---
 import Layout from '~/layouts/LandingLayout.astro';
 
-import Hero2 from '~/components/widgets/Hero2.astro';
+import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Subscription Landing Page Demo',
+  title: 'Lead Generation Landing Page Demo',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero2 Widget ******************* -->
 
-  <Hero2
-    tagline="Subscription Landing Demo"
-    title="Subscription Landing Page: Turn Casual Browsers into Loyal Subscribers!"
-    subtitle="Unlock the formula for a Subscription Landing Page that keeps your audience coming back for more."
+  <Hero
+    tagline="Lead Generation Landing Demo"
+    title="Effective Lead Generation Landing Page: Unlock the Secrets"
+    subtitle="Discover the secrets to creating a Landing Page that turns curious visitors into eager leads. (Your Hero should grab attention instantly. Use a powerful headline that speaks directly to your target audience.)"
     actions={[
       { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
       { text: 'Learn more', href: '#' },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1593510987046-1f8fcfc512a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Ironic image associated with canceling a subscription. Subscription Landing Page Demo',
+      src: 'https://images.unsplash.com/photo-1597423498219-04418210827d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
+      alt: 'Magnet attracting screws. Lead generation landing page demo',
     }}
   />
 

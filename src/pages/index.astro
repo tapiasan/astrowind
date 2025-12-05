@@ -1,4 +1,5 @@
 ---
+import hvacImage from '~/assets/images/IMG_6703.jpg';
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
@@ -13,7 +14,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Simmons Heating & Air | Professional HVAC Services in McHenry, Illinois',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,78 +26,67 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Request a Quote',
+        href: '/contact',
+        icon: 'tabler:phone',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Our Services', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: hvacImage, alt: 'Professional HVAC System Installation' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      Expert HVAC Services for <span class="hidden xl:inline">Your Home & Business</span>
+      <span class="text-accent dark:text-white"> in McHenry, Illinois</span>
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <Note title="Professional Service:" description="Locally Owned • Licensed & Insured • 24/7 Emergency Availability" />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline="Services"
+    title="Complete HVAC Solutions"
+    subtitle="From heating installation to emergency repairs, we provide comprehensive services for residential and commercial properties throughout McHenry County."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Heating Installation & Repair',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Expert installation and maintenance of furnaces, heat pumps, and boiler systems for reliable warmth during Illinois winters.',
+        icon: 'tabler:flame',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Air Conditioning Services',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Professional AC installation, repair, and seasonal maintenance to keep you cool and comfortable all summer long.',
+        icon: 'tabler:snowflake',
       },
       {
-        title: 'Best Practices',
+        title: 'Preventive Maintenance',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+          'Regular maintenance plans designed to extend system life, improve efficiency, and prevent costly emergency repairs.',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Excellent Page Speed',
+        title: '24/7 Emergency Service',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'We understand emergencies happen anytime. Our experienced technicians are available around the clock for urgent repairs.',
+        icon: 'tabler:alert-circle',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Indoor Air Quality',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Improve your home or business with air filtration, UV systems, humidifiers, and comprehensive air quality solutions.',
+        icon: 'tabler:wind',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Commercial HVAC',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Specialized services for commercial properties, including large-scale systems, maintenance contracts, and emergency support.',
+        icon: 'tabler:building',
       },
     ]}
   />
@@ -105,33 +95,35 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Why Choose Us"
+    title="Local Expertise, Professional Service"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'Locally Owned & Operated',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Family-owned business serving McHenry County for over a decade with deep community roots and personalized service.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Licensed & Fully Insured',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'All technicians are certified and trained to the highest standards, ensuring safe, compliant work on every job.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Transparent Pricing',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'No hidden fees or surprise charges. We provide detailed estimates upfront so you know exactly what to expect.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'https://placecats.com/800/600',
+      alt: 'Professional HVAC Technician',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Trusted by McHenry County Residents
+      </h3>
+      Your comfort and satisfaction are our top priority in every service call
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,31 +137,35 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Energy-Efficient Systems',
+        description: `Modern HVAC systems that reduce energy costs while maintaining optimal comfort levels year-round.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Fast Response Times',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Quick scheduling and same-day or next-day service availability for most emergency repair requests in McHenry County.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Warranty Protection',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          'Comprehensive warranties on parts and labor with professional service guarantees for your peace of mind.',
       },
       {
-        title: 'Integration of media',
+        title: 'Expert Diagnostics',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Advanced diagnostic equipment and training to accurately identify issues and recommend the most cost-effective solutions.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      src: '~/assets/images/kettenreaktion-l_Vn4HlFQVw-unsplash.jpg',
+      alt: 'HVAC System Maintenance',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">
+      <h6 class="text-md font-bold tracking-tight dark:text-white sm:text-lg mb-2">
+        Keeping your systems running reliably and efficiently
+      </h6></Fragment
+    >
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -183,31 +179,31 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Seasonal Maintenance Plans',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Customized maintenance agreements to keep your heating and cooling systems operating at peak efficiency all year long.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Technician Training & Certification',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Our team stays current with the latest HVAC technology and industry certifications to deliver quality service.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Customer Support',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Responsive customer service team ready to answer questions, schedule appointments, or address concerns promptly.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Satisfaction Guarantee',
+        description: `We stand behind our work with a 100% satisfaction guarantee because your comfort is what matters most to us.`,
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: 'https://placecats.com/800/600',
+      alt: 'Customer Satisfaction',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">Your comfort is our commitment</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -217,25 +213,25 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="How to Get Professional HVAC Service from Simmons"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Call or Request Online</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "Contact us by phone or fill out our online request form. We'll discuss your HVAC needs and find a time that works best for you.",
+        icon: 'tabler:phone',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Professional Diagnosis</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          'Our licensed technicians arrive on time, assess your system, and provide a comprehensive diagnosis with transparent pricing.',
+        icon: 'tabler:tools',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Expert Service</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'We perform quality repairs, installation, or maintenance using industry best practices and the latest tools and techniques.',
+        icon: 'tabler:check',
       },
       {
         title: 'Ready!',
@@ -243,67 +239,67 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://placecats.com/800/600',
+      alt: 'Professional HVAC Service Process',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="Comprehensive Service Coverage"
+    subtitle="From routine maintenance to complex repairs, we handle all your HVAC needs"
+    tagline="What We Offer"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        title: 'Furnace Installation',
+        description: 'Energy-efficient furnace installation and replacement with professional setup and testing.',
+        icon: 'tabler:flame',
       },
       {
-        title: 'Heros',
+        title: 'AC Installation',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+          'Expert air conditioning installation from sizing to ductwork optimization for maximum cooling efficiency.',
+        icon: 'tabler:snowflake',
       },
       {
-        title: 'Features',
+        title: 'Heat Pump Service',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+          'Installation, repair, and maintenance of heat pumps for efficient year-round heating and cooling.',
+        icon: 'tabler:thermometer',
       },
       {
-        title: 'Content',
+        title: 'Boiler Service',
+        description: 'Complete boiler installation, repair, and maintenance for commercial and residential properties.',
+        icon: 'tabler:flame',
+      },
+      {
+        title: 'Duct Cleaning',
         description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+          'Professional air duct cleaning to improve air quality and system efficiency throughout your property.',
+        icon: 'tabler:wind',
       },
       {
-        title: 'Call-to-Action',
+        title: 'UV Air Purifiers',
         description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
+          'Advanced air purification systems to eliminate bacteria, viruses, and allergens from your indoor air.',
+        icon: 'tabler:sun',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
+        title: 'Humidity Control',
+        description: 'Humidifier and dehumidifier installation and service for optimal indoor comfort and air quality.',
+        icon: 'tabler:droplet',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
+        title: 'Smart Thermostats',
+        description: 'Installation of programmable and smart thermostats for improved comfort and energy savings.',
+        icon: 'tabler:smart-home',
       },
       {
-        title: 'Contact',
+        title: 'Commercial Solutions',
         description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+          'Specialized services for retail, office, and industrial properties with maintenance contracts available.',
+        icon: 'tabler:building-store',
       },
     ]}
   >
@@ -315,50 +311,47 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="HVAC Tips & Maintenance Guides"
+    information={`Check out our blog for helpful tips on maintaining your heating and cooling systems, seasonal preparation advice, energy savings strategies, and updates about industry best practices to keep your home or business comfortable year-round.`}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Find answers to common questions about our HVAC services, pricing, maintenance, and more."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'How often should I have my HVAC system serviced?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'We recommend professional maintenance at least twice a year—once before heating season and once before cooling season. Regular maintenance improves efficiency, extends system life, and prevents costly emergency repairs.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'Do you offer emergency services?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          "Yes! We provide 24/7 emergency HVAC services for heating and cooling emergencies. Contact us anytime, and we'll prioritize your repair as quickly as possible.",
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'How long do HVAC systems typically last?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Modern HVAC systems typically last 15-20 years with proper maintenance. Furnaces last 15-20 years, air conditioners 10-15 years, and heat pumps 15-20 years. We can help evaluate if replacement or repair is best for your system.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'What can I do to improve energy efficiency?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'Regular maintenance, upgrading to a smart thermostat, sealing air leaks, improving insulation, and considering a newer high-efficiency system all help reduce energy costs. Our team can assess your home and recommend solutions.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'Do you service commercial properties?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'Absolutely! We provide comprehensive HVAC services for retail, office, restaurant, and industrial properties, including maintenance contracts designed to keep your systems running reliably.',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'What areas do you serve?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'We service McHenry, Illinois and surrounding areas in McHenry County. Visit our Service Areas page for specific towns and neighborhoods we cover, or call to confirm service availability.',
       },
     ]}
   />
@@ -367,10 +360,10 @@ const metadata = {
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Years Serving McHenry', amount: '10+' },
+      { title: 'Professional Technicians', amount: '25+' },
+      { title: 'Satisfied Customers', amount: '5K+' },
+      { title: '24/7 Emergency Service', amount: '365' },
     ]}
   />
 
@@ -380,20 +373,20 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Request a Quote Today',
+        href: '/contact',
+        icon: 'tabler:phone',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Ready for Reliable<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">HVAC Service?</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Contact Simmons Heating & Air today for professional service in McHenry County. <br
+        class="hidden md:inline"
+      />Call us anytime—we're here to help!
     </Fragment>
   </CallToAction>
 </Layout>

@@ -1,0 +1,47 @@
+---
+/**
+ * SectionHeader Component
+ * Reusable component for section headers with optional tagline, title, and subtitle
+ * Used across pages to maintain consistent styling and spacing
+ */
+
+interface Props {
+  tagline?: string;
+  title?: string;
+  subtitle?: string;
+  align?: 'left' | 'center' | 'right';
+  class?: string;
+}
+
+const { tagline, title, subtitle, align = 'center', class: customClass = '' } = Astro.props;
+
+const alignmentClasses = {
+  left: 'text-left',
+  center: 'text-center',
+  right: 'text-right',
+};
+---
+
+<div class:list={[alignmentClasses[align], 'mb-10 md:mb-12 lg:mb-16', customClass]}>
+  {
+    tagline && (
+      <p class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase mb-2 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+        {tagline}
+      </p>
+    )
+  }
+  {
+    title && (
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight dark:text-white mb-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+        {title}
+      </h2>
+    )
+  }
+  {
+    subtitle && (
+      <p class="text-lg text-muted dark:text-slate-300 max-w-3xl intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+        {subtitle}
+      </p>
+    )
+  }
+</div>

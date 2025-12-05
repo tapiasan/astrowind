@@ -1,41 +1,136 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
-import Hero2 from '~/components/widgets/Hero2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Click-through Landing Page Demo',
+  title: 'Service Areas | Simmons Heating & Air in McHenry, Illinois',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero2 Widget ******************* -->
+  <!-- Hero Widget ******************* -->
 
-  <Hero2
-    tagline="Click-through Demo"
-    title="Click-through Landing Page: The Perfect Bridge to Conversion!"
-    subtitle="Learn how to design a Click-Through Landing Page that seamlessly guides visitors to your main offer."
-    actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Learn more', href: '#' },
-    ]}
+  <Hero
+    tagline="Service Areas"
+    title="Serving McHenry County and Surrounding Areas"
+    subtitle="Simmons Heating & Air provides professional HVAC services throughout McHenry County and nearby communities in Illinois. Check if we serve your area, and contact us today to schedule service."
     image={{
-      src: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Click-through Landing Page Hero Image',
+      src: 'https://placecats.com/800/600',
+      alt: 'HVAC Service Area',
     }}
   />
 
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Primary Service Areas"
+    subtitle="We proudly serve these communities in McHenry County with comprehensive HVAC services"
+    columns={3}
+    items={[
+      {
+        title: 'McHenry',
+        description: 'Downtown McHenry, residential neighborhoods, and surrounding suburbs',
+      },
+      {
+        title: 'Algonquin',
+        description: 'Residential and commercial HVAC services throughout Algonquin',
+      },
+      {
+        title: 'Crystal Lake',
+        description: 'Heating and cooling services for homes and businesses in Crystal Lake',
+      },
+      {
+        title: 'Lake in the Hills',
+        description: 'Professional HVAC installation and repair in Lake in the Hills',
+      },
+      {
+        title: 'Huntley',
+        description: 'Comprehensive heating and cooling services for Huntley area',
+      },
+      {
+        title: 'Woodstock',
+        description: 'HVAC maintenance and emergency service in Woodstock',
+      },
+      {
+        title: 'Bull Valley',
+        description: 'Residential HVAC services for Bull Valley properties',
+      },
+      {
+        title: 'Garden Prairie',
+        description: 'Professional heating and cooling services in Garden Prairie',
+      },
+      {
+        title: 'Marengo',
+        description: 'Complete HVAC solutions for Marengo residents and businesses',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    items={[
+      {
+        title: 'Local Expertise',
+        description:
+          'As a McHenry-based company, we understand the unique HVAC challenges and climate conditions of our region, allowing us to provide tailored solutions.',
+      },
+      {
+        title: 'Fast Response Times',
+        description:
+          'Living locally means we can respond quickly to service requests, emergency repairs, and maintenance needs throughout the area.',
+      },
+      {
+        title: 'Community Commitment',
+        description:
+          "We're invested in serving our community with professional service, fair pricing, and a commitment to customer satisfaction.",
+      },
+    ]}
+    image={{
+      src: 'https://placecats.com/800/600',
+      alt: 'Service Area Map',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Why Choose a Local HVAC Contractor?
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Don't See Your Area?"
+    tagline="Contact Us"
+    columns={1}
+    items={[
+      {
+        title: 'Service Outside Our Listed Areas',
+        description:
+          "If your community isn't listed above, don't hesitate to reach out! We may service your area or be able to make accommodations for larger projects. Call us at (815) 123-4567 or fill out our contact form to inquire about service availability.",
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
   <CallToAction
-    title="Coming soon"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
     actions={[
       {
         variant: 'primary',
-        text: 'Download Template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        icon: 'tabler:download',
+        text: 'Request Service in Your Area',
+        href: '/contact',
       },
     ]}
+    title="Ready for Professional HVAC Service?"
+    subtitle="If Simmons Heating & Air serves your area, contact us today to schedule your heating or cooling service, maintenance, or emergency repair."
   />
 </Layout>

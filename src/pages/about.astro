@@ -7,7 +7,7 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'About Simmons Heating & Air | McHenry, Illinois HVAC Contractor',
 };
 ---
 
@@ -17,59 +17,60 @@ const metadata = {
   <Hero
     tagline="About us"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      src: 'https://placecats.com/800/600',
+      alt: 'HVAC Technician',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white"> Beautiful Website Templates</span>
+      Trusted HVAC Services for <br />
+      <span class="text-accent dark:text-white"> McHenry County Since 2014</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      Simmons Heating & Air is a locally-owned HVAC contractor dedicated to providing professional, reliable heating and
+      cooling services to residential and commercial customers throughout McHenry County, Illinois. With over a decade
+      of experience, we've built our reputation on quality workmanship, transparent pricing, and exceptional customer
+      service.
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
+    title="By The Numbers"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'Years in Business', amount: '10+' },
+      { title: 'Team Members', amount: '25+' },
+      { title: 'Happy Customers', amount: '5K+' },
+      { title: 'Service Calls', amount: '10K+' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Our Specialties"
+    subtitle="We provide a complete range of HVAC services designed to keep your systems running efficiently and reliably throughout the year."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Heating Systems',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+          'Expert installation, repair, and maintenance of furnaces, heat pumps, and boiler systems for comfortable Illinois winters.',
+        icon: 'tabler:flame',
       },
       {
-        title: 'Interior Design',
+        title: 'Cooling Systems',
         description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+          'Professional air conditioning installation, repair, and seasonal maintenance to keep you cool all summer long.',
+        icon: 'tabler:snowflake',
       },
       {
-        title: 'Photography',
+        title: 'Emergency Service',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
+          'Available 24/7 for urgent HVAC emergencies, breakdowns, and unexpected system failures when you need us most.',
+        icon: 'tabler:alert-circle',
       },
     ]}
   />
@@ -81,68 +82,68 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
+        title: 'Maintenance Plans',
         description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
+          'Customized maintenance agreements to keep your HVAC systems running at peak efficiency and extend system lifespan.',
+        icon: 'tabler:tools',
       },
       {
-        title: 'Blog',
+        title: 'Indoor Air Quality',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
+          'Air purification, duct cleaning, humidification, and advanced filtration systems for healthier indoor environments.',
+        icon: 'tabler:wind',
       },
       {
-        title: 'Business',
+        title: 'System Installation',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
+          'Professional installation of high-efficiency heating and cooling systems with proper sizing and optimal ductwork design.',
+        icon: 'tabler:tools',
       },
       {
-        title: 'Branding',
+        title: 'Smart Thermostats',
         description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
+          'Installation and setup of programmable and smart thermostats for improved comfort control and energy savings.',
+        icon: 'tabler:smart-home',
       },
       {
-        title: 'Medical',
+        title: 'Commercial Service',
         description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
+          'Comprehensive HVAC services for retail, office, and industrial properties with flexible maintenance contracts.',
+        icon: 'tabler:building-store',
       },
       {
-        title: 'Fashion Design',
+        title: 'Seasonal Prep',
         description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
+          'Pre-season heating and cooling system inspections and tune-ups to ensure reliability when you need it most.',
+        icon: 'tabler:calendar-event',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
+      src: 'https://placecats.com/800/600',
+      alt: 'Professional HVAC Service',
     }}
   />
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    title="Our Core Values"
+    subtitle="These principles guide everything we do and drive our commitment to customer satisfaction and professional excellence."
     items={[
       {
-        title: 'Customer-centric approach',
+        title: 'Customer Satisfaction',
         description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+          'Your comfort and satisfaction are our top priority. We stand behind our work with a 100% satisfaction guarantee and are always available to address your concerns.',
       },
       {
-        title: 'Constant Improvement',
+        title: 'Professional Excellence',
         description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+          'Our technicians are licensed, certified, and continuously trained in the latest HVAC technology and industry standards to deliver quality service every time.',
       },
       {
-        title: 'Ethical Practices',
+        title: 'Honest Communication',
         description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+          'We believe in transparent pricing, clear explanations of your system issues, and straightforward recommendations—no hidden fees or upselling.',
       },
     ]}
   />
@@ -150,30 +151,31 @@ const metadata = {
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    title="Why McHenry Residents Choose Us"
+    subtitle="Serving our community with integrity, expertise, and unwavering commitment to quality."
     isReversed={true}
     callToAction={{
-      text: 'See more',
-      href: '/',
+      text: 'Request Service',
+      href: '/contact',
     }}
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
+        title: 'Local Knowledge',
+        description:
+          'As a McHenry-based company, we understand the unique climate challenges and HVAC needs of our community and can provide tailored solutions.',
+        icon: 'tabler:map-pin',
       },
       {
-        title: 'Positive customer feedback and reviews',
+        title: 'Customer Reviews',
         description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
+          'We take pride in our reputation for excellence and have earned consistently positive reviews and word-of-mouth referrals from satisfied customers throughout McHenry County.',
+        icon: 'tabler:star',
       },
       {
-        title: 'Awards and recognition as industry experts',
+        title: 'Industry Leadership',
         description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
+          'Our team stays at the forefront of HVAC technology and best practices, ensuring you receive the most current and effective solutions available.',
+        icon: 'tabler:certificate',
       },
     ]}
   />
@@ -181,25 +183,25 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Our locations"
-    tagline="Find us"
+    title="Serving McHenry County"
+    tagline="Service Areas"
     columns={4}
     items={[
       {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
+        title: 'McHenry',
+        description: 'Downtown, suburbs, and surrounding neighborhoods',
       },
       {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
+        title: 'Algonquin',
+        description: 'Fast, reliable service and maintenance',
       },
       {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
+        title: 'Crystal Lake',
+        description: 'Residential and commercial services',
       },
       {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
+        title: 'And Beyond',
+        description: 'Call us to confirm service in your area',
       },
     ]}
   />
@@ -207,21 +209,21 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Technical Support"
-    tagline="Contact us"
+    title="Get in Touch"
+    tagline="Contact Us"
     columns={2}
     items={[
       {
-        title: 'Chat with us',
+        title: 'Schedule Service',
         description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
+          'Request a quote, schedule maintenance, or arrange an emergency service call through our convenient online form or by phone.',
+        icon: 'tabler:calendar-event',
       },
       {
-        title: 'Call us',
+        title: 'Call for Support',
         description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
+          'Speak directly with our friendly team for questions, emergency service needs, or to discuss your HVAC system requirements.',
+        icon: 'tabler:phone',
       },
     ]}
   />

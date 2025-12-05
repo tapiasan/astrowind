@@ -1,5 +1,5 @@
 ---
-import Image from '~/components/common/Image.astro';
+import { getImage } from 'astro:assets';
 import Button from '~/components/ui/Button.astro';
 
 import type { Hero as Props } from '~/types';
@@ -16,6 +16,23 @@ const {
   id,
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
+
+let bgImageUrl: string | undefined;
+if (image && typeof image !== 'string' && image !== null && typeof image === 'object' && 'src' in image) {
+  try {
+    const imageData = image as Record<string, unknown>;
+    // Try to resolve the image, otherwise treat it as a string URL
+    try {
+      const resolvedImage = await getImage({ src: imageData.src as string, width: 1200, height: 675 });
+      bgImageUrl = resolvedImage.src;
+    } catch {
+      bgImageUrl = imageData.src as string;
+    }
+  } catch {
+    // Silently fail if there's any issue
+    bgImageUrl = undefined;
+  }
+}
 ---
 
 <section class="relative md:-mt-[76px] not-prose" {...id ? { id } : {}}>
@@ -23,11 +40,22 @@ const {
     <slot name="bg">
       {bg ? <Fragment set:html={bg} /> : null}
     </slot>
+    {
+      bgImageUrl && (
+        <div
+          class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
+          style={`background-image: url('${bgImageUrl}')`}
+          aria-hidden="true"
+        />
+      )
+    }
   </div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
     <div class="py-12 md:py-20">
-      <div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
+      <div
+        class="text-center pb-10 md:pb-16 max-w-5xl mx-auto bg-gradient-to-b from-white via-white/70 to-white/40 rounded-lg py-4"
+      >
         {
           tagline && (
             <p
@@ -72,24 +100,12 @@ const {
         {content && <Fragment set:html={content} />}
       </div>
       <div
-        class="intersect-once intersect-no-queue intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+        class="intersect-once intersect-no-queue intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade hidden"
       >
         {
-          image && (
+          image && typeof image === 'string' && (
             <div class="relative m-auto max-w-5xl">
-              {typeof image === 'string' ? (
-                <Fragment set:html={image} />
-              ) : (
-                <Image
-                  class="mx-auto rounded-md w-full"
-                  widths={[400, 768, 1024, 2040]}
-                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-                  loading="eager"
-                  width={1024}
-                  height={576}
-                  {...image}
-                />
-              )}
+              <Fragment set:html={image} />
             </div>
           )
         }

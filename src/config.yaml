@@ -1,30 +1,30 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Simmons Heating & Air
+  site: 'https://simmonsheatingair.com'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: ''
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Simmons Heating & Air | HVAC Services in McHenry, Illinois
+    template: '%s — Simmons Heating & Air'
+  description: 'Professional HVAC services in McHenry, Illinois. Heating, cooling, maintenance, and emergency repairs. Trusted local contractor serving residential and commercial customers.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Simmons Heating & Air
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: '@simmonsheating'
+    site: '@simmonsheating'
     cardType: summary_large_image
 
 i18n:

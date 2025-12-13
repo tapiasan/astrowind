@@ -27,6 +27,7 @@ The AstroWind template has been fully customized for **Simmons Heating & Air**, 
 ### Key Features Implemented
 
 **Content & Marketing:**
+
 - ✅ Local HVAC business branding
 - ✅ 24/7 emergency service messaging
 - ✅ Service area targeting (McHenry County focus)
@@ -36,6 +37,7 @@ The AstroWind template has been fully customized for **Simmons Heating & Air**, 
 - ✅ Service process explanation
 
 **Technical:**
+
 - ✅ Responsive design across all devices
 - ✅ SEO-optimized metadata
 - ✅ Properly configured navigation
@@ -47,6 +49,7 @@ The AstroWind template has been fully customized for **Simmons Heating & Air**, 
 ### Files Modified & Created
 
 **Content Pages:**
+
 ```
 - src/config.yaml
 - src/navigation.ts
@@ -58,6 +61,7 @@ The AstroWind template has been fully customized for **Simmons Heating & Air**, 
 ```
 
 **Components:**
+
 ```
 - src/components/ui/Form.astro (updated with Formspree integration)
 - src/components/ui/SectionHeader.astro (new reusable component)
@@ -65,6 +69,7 @@ The AstroWind template has been fully customized for **Simmons Heating & Air**, 
 ```
 
 **Documentation:**
+
 ```
 - FORMSPREE_SETUP.md (contact form backend setup guide)
 - AGENTS.md (development guidelines)
@@ -77,7 +82,7 @@ Before deploying to production, complete these tasks:
 
 1. **Company Information**
    - [ ] Update phone number: (815) 123-4567 → your actual number
-   - [ ] Update email: info@simmonsheatingair.com → your actual email
+   - [ ] Update email: info@simmonsheatingnair.com → your actual email
    - [ ] Update company address
    - [ ] Update social media links
 
@@ -87,11 +92,11 @@ Before deploying to production, complete these tasks:
    - [ ] Configure Meta/Facebook pixel if needed
 
 3. **Contact Form**
-    - [ ] Complete Formspree setup (see FORMSPREE_SETUP.md for detailed instructions)
-    - [ ] Replace placeholder Formspree ID in src/components/ui/Form.astro
-    - [ ] Set up email notifications for new inquiries
-    - [ ] Test contact form submission with real data
-    - [ ] Configure redirect page after successful submission (optional)
+   - [ ] Complete Formspree setup (see FORMSPREE_SETUP.md for detailed instructions)
+   - [ ] Replace placeholder Formspree ID in src/components/ui/Form.astro
+   - [ ] Set up email notifications for new inquiries
+   - [ ] Test contact form submission with real data
+   - [ ] Configure redirect page after successful submission (optional)
 
 4. **Content Enhancement**
    - [ ] Replace placeholder testimonials with real customer reviews

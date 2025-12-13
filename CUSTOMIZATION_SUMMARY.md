@@ -9,7 +9,7 @@ The AstroWind Astro + Tailwind CSS template has been fully customized for Simmon
 ### 1. Configuration (src/config.yaml)
 
 - Updated site name to "Simmons Heating & Air"
-- Changed site URL to simmonsheatingair.com
+- Changed site URL to simmonsheatingnair.com
 - Updated SEO metadata with HVAC-focused keywords
 - Updated social media handles
 
@@ -70,7 +70,7 @@ The AstroWind Astro + Tailwind CSS template has been fully customized for Simmon
 - Updated contact form for service requests
 - Contact information:
   - Phone: (815) 123-4567
-  - Email: info@simmonsheatingair.com
+  - Email: info@simmonsheatingnair.com
   - Location: McHenry, Illinois 60050
 - Support categories: General inquiries, emergency service, commercial service
 
@@ -108,7 +108,7 @@ The AstroWind Astro + Tailwind CSS template has been fully customized for Simmon
 ## Next Steps
 
 1. Update placeholder phone number (815) 123-4567
-2. Update placeholder email info@simmonsheatingair.com
+2. Update placeholder email info@simmonsheatingnair.com
 3. Replace placeholder testimonial names/photos with real customer data
 4. Configure Google Analytics with tracking ID
 5. Set up Google Site Verification

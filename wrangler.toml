@@ -1,0 +1,7 @@
+name = "simmons-heating-air"
+type = "javascript"
+compatibility_date = "2025-12-13"
+pages_build_output_dir = "dist"
+
+# This file is for Cloudflare Pages deployment
+# Do NOT use 'npx wrangler deploy' - use Cloudflare Pages UI or 'wrangler pages deploy'

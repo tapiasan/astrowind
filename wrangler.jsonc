@@ -1,5 +1,0 @@
-{
-  "name": "simmons-heating-air",
-  "compatibility_date": "2025-12-13", // Update to the day you deploy
-  "pages_build_output_dir": "./dist",
-}
